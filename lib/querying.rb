@@ -41,4 +41,6 @@ def select_character_names_and_number_of_books_they_are_in
    ORDER BY total_book_appearances DESC, characters.name;"
   # Note: ORDER BY characters.name doesn't make a difference in this case, but I'm doing it to be safe.
   # Also, replacing GROUP BY...ORDER BY... with ORDER BY characters.name DESC returns ["Character Four", 16], but I thought it would return ["Tyrion Lannister", 16].
+  <<-SQL
+  SQL
 end
